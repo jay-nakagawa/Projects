@@ -103,3 +103,20 @@ button:hover{
     background-color: hsl(158, 36%, 28%);
 }
 
+
+@media only screen and (max-width: 650px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .img{
+        max-height: 350px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    h2, h1, .pro-des, .price{
+        padding-bottom: 20px;
+    }
+
+}
