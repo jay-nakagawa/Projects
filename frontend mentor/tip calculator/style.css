@@ -110,3 +110,84 @@ button {
     width: 96%;
     /* padding: 9px 0 9px 0; */
 }
+
+@media only screen and (min-width:1000px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 900px;
+        flex-direction: row;
+        border-radius: 7px;
+        padding: 2.3rem;
+        height: 500px;
+        justify-content: space-between;
+    }
+
+    /* input {} */
+
+    .upper {
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        /* display: flex;
+        flex-direction: column; */
+        /* margin-bottom: 3.2rem; */
+    }
+
+    .bill-input {
+        margin-bottom: 2rem;
+
+    }
+
+    .people-input {
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        grid-template-columns: 135px 135px 135px;
+        row-gap: 1.4rem;
+        column-gap: 1.5em;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        height: 55px;
+
+    }
+
+    .lower {
+        /* width: auto; */
+        padding: 48px 38px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        width: 400px;
+    }
+
+    .amount {
+        font-size: 45px;
+    }
+
+    .upper {}
+
+    .reset {
+        margin-top: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
