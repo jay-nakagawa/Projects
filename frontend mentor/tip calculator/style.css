@@ -56,6 +56,7 @@ input {
     margin-top: 0.7rem;
     column-gap: .7rem;
     row-gap: .7rem;
+    margin-bottom: 1rem;
 }
 
 button {
@@ -67,5 +68,9 @@ button {
     color: white;
     border: none;
     padding: 7px 0;
+    cursor: pointer;
+}
 
+.people-input {
+    background-image: url(/images/icon-person.svg);
 }
