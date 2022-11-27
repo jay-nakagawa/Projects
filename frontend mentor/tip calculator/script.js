@@ -1,6 +1,6 @@
 const billInput = document.getElementById("bill-input");
 const tipBtns = document.getElementsByClassName("tip-button");
-const customTipInput = document.querySelector(".custom");
+const customTipInput = document.querySelector("#custom");
 const peopleInput = document.querySelector(".people-input");
 const errorMsg = document.getElementById("error-msg");
 
