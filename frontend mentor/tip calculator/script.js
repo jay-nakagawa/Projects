@@ -26,7 +26,7 @@ peopleInput.addEventListener("input", function () {
     resetBtn.setAttribute("disabled", true); //???//
     resetBtn.style.background = "hsl(183, 64%, 25%)";
   } else {
-    // errorMsg.style.visibility = "hidden";
+    errorMsg.style.visibility = "hidden";
 
     if (customTipInput.value !== "") {
       tipPercent = +customTipInput.value;

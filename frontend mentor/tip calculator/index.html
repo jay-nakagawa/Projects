@@ -50,10 +50,11 @@
           <button class="button">15%</button>
           <button class="button">25%</button>
           <button class="button">50%</button>
-          <button class="custom">Custom</button>
+          <input type="number" name="custom" id="custom" placeholder="Custom" />
         </div>
         <div class="people-section">
           <label for="">Number of People</label>
+          <p id="error-msg">Can't be zero</p>
           <input class="people-input" type="number" />
         </div>
       </div>
@@ -74,7 +75,7 @@
           </div>
           <div class="amount" id="total-amount">$0.00</div>
         </div>
-        <button class="reset" id="reset">RESET</button>
+        <button class="reset" id="reset" disabled>RESET</button>
       </div>
 
       <!-- <div class="attribution">
