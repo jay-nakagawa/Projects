@@ -1,12 +1,12 @@
-const billInput = document.querySelector("bill-input");
-const tipBtns = document.getElementsByClassName("button");
+const billInput = document.getElementById("bill-input");
+const tipBtns = document.getElementsByClassName("tip-button");
 const customTipInput = document.querySelector(".custom");
 const peopleInput = document.querySelector(".people-input");
-// const errorMsg = document.getElementById("error-msg");
+const errorMsg = document.getElementById("error-msg");
 
 const tipAmountPerPerson = document.getElementById("tip-amount");
 const totalAmountPerPerson = document.getElementById("total-amount");
-console.log(1);
+
 const resetBtn = document.getElementById("reset");
 
 let tipPercent = 0;
@@ -14,6 +14,7 @@ let tipPercent = 0;
 for (let btn of tipBtns) {
   btn.addEventListener("click", function () {
     tipPercent = Number.parseInt(btn.textContent);
+    // console.log(tipPercent);
   });
 }
 
@@ -29,14 +30,19 @@ peopleInput.addEventListener("input", function () {
     errorMsg.style.visibility = "hidden";
 
     if (customTipInput.value !== "") {
-      tipPercent = +customTipInput.value;
+      tipPercent = +customTipInput.value; //***** */
     }
 
     const billAmount = +billInput.value;
+    console.log(billAmount);
     const peopleCount = +peopleInput.value;
+    console.log(peopleCount);
 
     const tip = (billAmount * tipPercent) / 100;
+    console.log(tip);
+    console.log(tipPercent);
     const total = billAmount + tip;
+    console.log(total);
 
     tipAmountPerPerson.textContent = `$${(tip / peopleCount).toFixed(2)}`;
     totalAmountPerPerson.textContent = `$${(total / peopleCount).toFixed(2)}`;
@@ -47,7 +53,7 @@ peopleInput.addEventListener("input", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-  inputBill.value = inputCustomTip.value = inputPeopleCount.value = "";
+  billInput.value = customTipInput.value = peopleInput.value = "";
   tipAmountPerPerson.textContent = totalAmountPerPerson.textContent = "$0.00";
   tipPercent = 0;
   resetBtn.setAttribute("disabled", true);

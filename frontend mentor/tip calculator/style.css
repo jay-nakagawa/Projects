@@ -182,6 +182,13 @@ button {
         margin-top: auto;
     }
 
+    #error-msg {
+        position: absolute;
+        top: -20px;
+        right: 0;
+        color: rgb(252, 125, 125);
+        visibility: hidden;
+    }
 
 
 
