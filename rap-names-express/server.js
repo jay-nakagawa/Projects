@@ -7,11 +7,11 @@ require('dotenv').config()
 
 let db,
     dbConnectionStr = process.env.DB_STRING,
-    dbName = 'rap'
+    dbName = 'Stoic Quotes'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     .then(client => {
-        console.log(`Connected to ${dbName} Database`)
+        console.log(`Connected to the ${dbName} Database`)
         db = client.db(dbName)
     })
     
