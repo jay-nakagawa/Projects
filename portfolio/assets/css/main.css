@@ -3093,17 +3093,10 @@ button:disabled,
   width: 100%;
 }
 
-.flexbox{
-  
-}
-
-
 #main>.inner {
   padding: 0 6em 0.1em 6em;
   margin: 0 auto;
   max-width: 110em;
-  
-  
 }
 
 #main>.inner>section {
@@ -3205,7 +3198,6 @@ button:disabled,
   font-size: 0.9em;
   position: relative;
   width: 26em;
- 
 }
 
 #sidebar h2 {
@@ -3216,10 +3208,6 @@ button:disabled,
   padding: 2.22222em 2.22222em 2.44444em 2.22222em;
   position: relative;
   width: 26em;
-  height: 100vh;
-  overflow: hidden;
-  
-
 }
 
 #sidebar>.inner>* {
@@ -3545,7 +3533,7 @@ button:disabled,
     -webkit-flex-shrink: 0;
     -ms-flex-shrink: 0;
     flex-shrink: 0;
-    margin: 0 0 0 0;
+    margin: 0 0 4em 0;
     height: 25em;
     max-height: 50vh;
     min-height: 18em;
@@ -3558,24 +3546,12 @@ button:disabled,
     max-height: 35vh;
   }
 }
-#footer{
-  position: absolute;
-  /* right: 0; */
-  bottom: 0; 
-
-}
 
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
   font-size: small;
-  margin-bottom: 5px;
-  /* position: absolute; */
-  /* right: 0;
-  bottom: 0; */
-
-  
-  
+  margin-top: 10px;
 
 }
 
